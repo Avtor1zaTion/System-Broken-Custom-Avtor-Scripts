@@ -50,10 +50,10 @@ end
 
 local function ChangeToggleColor(Button)
 	led = Button.Ticket_Asset
-	if led.ImageColor3 == Color3.fromRGB(129, 129, 129) then
-		led.ImageColor3 = Color3.fromRGB(0, 0, 0)
+	if led.ImageColor3 == Color3.fromRGB(255, 0, 0) then
+		led.ImageColor3 = Color3.fromRGB(0, 255, 0)
 	else
-		led.ImageColor3 = Color3.fromRGB(255, 255, 255)
+		led.ImageColor3 = Color3.fromRGB(255, 0, 0)
 	end
 end
 
@@ -390,13 +390,13 @@ SysBroker.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 Background.Name = "Background"
 Background.Parent = SysBroker
 Background.AnchorPoint = Vector2.new(0.5, 0.5)
-Background.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Background.BorderColor3 = Color3.fromRGB(129, 129, 129)
+Background.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Background.BorderColor3 = Color3.fromRGB(0, 255, 255)
 Background.Position = UDim2.new(0.5, 0, 0.5, 0)
 Background.Size = UDim2.new(0, 500, 0, 350)
 Background.ZIndex = 9
-Background.Image = "rbxassetid://17261633128"
-Background.ImageColor3 = Color3.fromRGB(0, 0, 0)
+Background.Image = "rbxassetid://17312529178"
+Background.ImageColor3 = Color3.fromRGB(0, 255, 255)
 Background.ImageTransparency = 0.600
 Background.ScaleType = Enum.ScaleType.Tile
 Background.SliceCenter = Rect.new(0, 256, 0, 256)
@@ -412,8 +412,8 @@ TitleBarLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TitleBarLabel.BorderSizePixel = 0
 TitleBarLabel.Size = UDim2.new(1, 0, 0, 30)
 TitleBarLabel.Font = Enum.Font.Unknown
-TitleBarLabel.Text = "Переделанный System Broken от Avtor Scripts"
-TitleBarLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TitleBarLabel.Text = "SystemBroken/Avtor Scripts"
+TitleBarLabel.TextColor3 = Color3.fromRGB(0, 255, 255)
 TitleBarLabel.TextScaled = true
 TitleBarLabel.TextSize = 14.000
 TitleBarLabel.TextWrapped = true
@@ -3592,5 +3592,5 @@ task.spawn(function()
 end)
 
 SendNotify("System Broken","Gui developed by MalwareHub - Discord in your clipboard",10)
-SendNotify("System Broken","кастом сустем брокен от Avtor Scripts",10)
+SendNotify("System Broken","🎊Avtor Hub 1.8🎊",10)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/H20CalibreYT/SystemBroken/main/premium"))() -- load the premium
